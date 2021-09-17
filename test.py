@@ -17,7 +17,7 @@ import random
 # Player input to choose whether to play again, repeating the program, or breaking the loop..
 
 while True:
-    player_choice = input("Enter your choice! [ Rock, paper, or scissors? ]: ")
+    player_choice = input("Enter your choice! [ Rock, paper, or scissors? ] ")
     possible_choices = ["rock", "paper", "scissors"]
     opponent_choice = random.choice(possible_choices)
     print(f"You chose {player_choice}! Your opponent chose {opponent_choice}!")
@@ -40,6 +40,6 @@ while True:
         else:
             print("Rock crushes scissors! You lose..")
 
-    play_again = input("Play again.. [ Yes or No? ]: ")
+    play_again = input("Play again.. [ Yes or No? ] ")
     if play_again.lower() != "yes":
         break

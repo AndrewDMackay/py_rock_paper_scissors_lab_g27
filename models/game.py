@@ -11,6 +11,8 @@ class Game:
     player1 = Player("Steve", "rock")
     player2 = Player("Stan", "scissors")
 
+    players = [player1, player2]
+
     def play_game(self):
         if self.player1.player_choice == self.player2.player_choice:
             return(f"{self.player1.player_name}, and {self.player2.player_name} both selected {self.player1.player_choice}.. It's a tie!")
