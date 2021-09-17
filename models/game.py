@@ -13,19 +13,40 @@ class Game:
 
     def play_game(self):
         if self.player1.player_choice == self.player2.player_choice:
-            print(f"{self.player1.player_name}, and {self.player2.player_name} both selected {self.player1.player_choice}.. It's a tie!")
+            return(f"{self.player1.player_name}, and {self.player2.player_name} both selected {self.player1.player_choice}.. It's a tie!")
         elif self.player1.player_choice == "rock":
             if self.player2.player_choice == "scissors":
-                print(f"Rock crushes scissors! {self.player1.player_name} wins! {self.player2.player_name} loses!")
+                return(f"Rock crushes scissors! {self.player1.player_name} wins! {self.player2.player_name} loses!")
             else:
-                print(f"Paper covers rock! {self.player2.player_name} wins! {self.player1.player_name} loses..")
+                return(f"Paper covers rock! {self.player2.player_name} wins! {self.player1.player_name} loses..")
         elif self.player1.player_choice == "paper":
             if self.player2.player_choice  == "rock":
-                print(f"Paper covers rock! {self.player1.player_name} wins! {self.player1.player_name} loses..")
+                return(f"Paper covers rock! {self.player1.player_name} wins! {self.player1.player_name} loses..")
             else:
-                print(f"Scissors cuts paper! {self.player2.player_name} wins! {self.player1.player_name} loses..")
+                return(f"Scissors cuts paper! {self.player2.player_name} wins! {self.player1.player_name} loses..")
         elif self.player1.player_choice == "scissors":
             if self.player2.player_choice == "paper":
-                print(f"Scissors cuts paper! {self.player1.player_name} wins! {self.player1.player_name} loses..")
+                return(f"Scissors cuts paper! {self.player1.player_name} wins! {self.player1.player_name} loses..")
             else:
-                print(f"Rock crushes scissors! {self.player2.player_name} wins! {self.player1.player_name} loses..")
+                return(f"Rock crushes scissors! {self.player2.player_name} wins! {self.player1.player_name} loses..")
+
+    # Print method..
+    
+    # def play_game(self):
+    #     if self.player1.player_choice == self.player2.player_choice:
+    #         print(f"{self.player1.player_name}, and {self.player2.player_name} both selected {self.player1.player_choice}.. It's a tie!")
+    #     elif self.player1.player_choice == "rock":
+    #         if self.player2.player_choice == "scissors":
+    #             print(f"Rock crushes scissors! {self.player1.player_name} wins! {self.player2.player_name} loses!")
+    #         else:
+    #             print(f"Paper covers rock! {self.player2.player_name} wins! {self.player1.player_name} loses..")
+    #     elif self.player1.player_choice == "paper":
+    #         if self.player2.player_choice  == "rock":
+    #             print(f"Paper covers rock! {self.player1.player_name} wins! {self.player1.player_name} loses..")
+    #         else:
+    #             print(f"Scissors cuts paper! {self.player2.player_name} wins! {self.player1.player_name} loses..")
+    #     elif self.player1.player_choice == "scissors":
+    #         if self.player2.player_choice == "paper":
+    #             print(f"Scissors cuts paper! {self.player1.player_name} wins! {self.player1.player_name} loses..")
+    #         else:
+    #             print(f"Rock crushes scissors! {self.player2.player_name} wins! {self.player1.player_name} loses..")
