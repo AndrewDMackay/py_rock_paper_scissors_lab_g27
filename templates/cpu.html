@@ -8,7 +8,7 @@
     <h1>RPS.ROCK PAPER SCISSORS..</h1><br>
     <h3>Initiating RPS.BOT.v1.01..</h3>
     <p>"Greetings meat bag, define yourself below, and I will append it to your tombstone b***h.."</p><br>
-        <form action="/Rock Paper Scissors" method="post">
+        <form name="player-input" action="/cpu" method="post" onsubmit="">
             <label for="player-name"><strong>Enter your name..</strong></label><br>
             <br>
             <input type="text" name="player-name" id="player-name"><br>
@@ -16,9 +16,11 @@
             <h4>Let's play Rock, Paper, Scissors!</h4>
             <label for="player-choice">"Meat bag seems more appropriate, make your choice below, and prepare to get f****d up courtesy of advanced, machine learning.."</label><br>
             <br>
-            <input type="radio" name="player-choice" id="rock" value="rock"><strong>ROCK</strong><br>
-            <input type="radio" name="player-choice" id="paper" value="paper" checked><strong>PAPER</strong><br>
-            <input type="radio" name="player-choice" id="scissors" value="scissors"><strong>SCISSORS</strong><br>
+            <input type="radio" name="player-choice" id="rock" value="rock"><strong> ROCK</strong><br>
+            <br>
+            <input type="radio" name="player-choice" id="paper" value="paper"><strong> PAPER</strong><br>
+            <br>
+            <input type="radio" name="player-choice" id="scissors" value="scissors"><strong> SCISSORS</strong><br>
             <br>
             <input type="submit" name="player-choice" value="CONFIRM">
             <br>

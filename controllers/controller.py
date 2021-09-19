@@ -41,14 +41,14 @@ def play_game(player_choice_1, player_choice_2):
 def cpu():
     return render_template('cpu.html', title='cpu')
 
-@app.route('/cpu/', methods=['POST'])
+@app.route('/cpu', methods=['POST'])
 def play_game_cpu():
-    player_name = request.form["player-name"]
-    player_choice_1 = request.form.getlist('player-choice')
+    input_player_name = request.form["player-name"]
+    input_player_choice_1 = request.form['player-choice']
     possible_choices = ["rock", "paper", "scissors"]
     cpu_choice = random.choice(possible_choices)
     cpu_name = "RPS.BOT.v1.01"
-    player_1 = Player(player_name, player_choice_1)
+    player_1 = Player(input_player_name, input_player_choice_1)
     player_2 = Player(cpu_name, cpu_choice)
     game = Game(player_1, player_2)
     game.play_cpu()
