@@ -50,7 +50,9 @@ body > div > p {
 }
 
 body > div > p > a {
+    font-size: 18px;
     color: ghostwhite
+    
 }
 
 body > div > ul {
