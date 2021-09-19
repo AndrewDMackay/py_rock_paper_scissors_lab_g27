@@ -1,33 +1,27 @@
 from models.player import Player
 
 class Game:
-    def __init__(self):
-        pass
+    def __init__(self, player_1, player_2):
+        self.player_1 = player_1
+        self.player_2 = player_2
 
-    # Write a game class that has a function that takes in the 2 players..
-    # Compares their choices and returns the winning player. 
-    # If it is a draw the player should be None type..
-
-    player1 = Player("Steve", "rock")
-    player2 = Player("Stan", "scissors")
-
-    players = [player1, player2]
-
-    def play_game(self):
-        if self.player1.player_choice == self.player2.player_choice:
-            return(f"{self.player1.player_name}, and {self.player2.player_name} both selected {self.player1.player_choice}.. It's a tie!")
-        elif self.player1.player_choice == "rock":
-            if self.player2.player_choice == "scissors":
-                return(f"Rock crushes scissors! {self.player1.player_name} wins! {self.player2.player_name} loses!")
+    def play(self):
+        if self.player_1.player_choice == self.player_2.player_choice:
+            return(f"{self.player_1.player_name}, and {self.player_2.player_name} both selected {self.player_1.player_choice}.. It's a tie!")
+        elif self.player_1.player_choice == "rock":
+            if self.player_2.player_choice == "scissors":
+                return(f"Rock crushes scissors! {self.player_1.player_name} wins! {self.player_2.player_name} loses!")
             else:
-                return(f"Paper covers rock! {self.player2.player_name} wins! {self.player1.player_name} loses..")
-        elif self.player1.player_choice == "paper":
-            if self.player2.player_choice  == "rock":
-                return(f"Paper covers rock! {self.player1.player_name} wins! {self.player1.player_name} loses..")
+                return(f"Paper covers rock! {self.player_2.player_name} wins! {self.player_1.player_name} loses..")
+        elif self.player_1.player_choice == "paper":
+            if self.player_2.player_choice  == "rock":
+                return(f"Paper covers rock! {self.player_1.player_name} wins! {self.player_2.player_name} loses..")
             else:
-                return(f"Scissors cuts paper! {self.player2.player_name} wins! {self.player1.player_name} loses..")
-        elif self.player1.player_choice == "scissors":
-            if self.player2.player_choice == "paper":
-                return(f"Scissors cuts paper! {self.player1.player_name} wins! {self.player1.player_name} loses..")
+                return(f"Scissors cuts paper! {self.player_2.player_name} wins! {self.player_1.player_name} loses..")
+        elif self.player_1.player_choice == "scissors":
+            if self.player_2.player_choice == "paper":
+                return(f"Scissors cuts paper! {self.player_1.player_name} wins! {self.player_2.player_name} loses..")
             else:
-                return(f"Rock crushes scissors! {self.player2.player_name} wins! {self.player1.player_name} loses..")
+                return(f"Rock crushes scissors! {self.player_2.player_name} wins! {self.player_1.player_name} loses..")
+
+

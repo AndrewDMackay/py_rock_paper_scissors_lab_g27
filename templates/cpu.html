@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>{{ title }} - Rock Paper Scissors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <form action="/Rock Paper Scissors" method="post">
+        <label for="player-name">Enter your name Player 1!</label><br>
+        <input type="text" name="player-name" id="player-name"><br>
+        <label for="player-choice">Enter your choice! [ Rock, paper, or scissors? ]</label><br>
+        <input type="radio" name="player-choice" id="player-choice" value="rock">Rock<br>
+        <input type="radio" name="player-choice" id="player-choice" value="paper" checked>Paper<br>
+        <input type="radio" name="player-choice" id="player-choice" value="scissors">Scissors<br>
+        <input type="submit" value="Play">
+    </form>
+</body>
+</html>

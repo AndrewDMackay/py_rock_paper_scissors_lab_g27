@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: solid white;
+}
+
+body > h1 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body > h3 {
+    color: whitesmoke;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body > h4 {
+    color: ghostwhite;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body > div {
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body > div > p {
+    color: white;
+    padding: 10px, 10px, 10px, 10px;
+}
+
+body > div > a {
+    color: whitesmoke;
+    padding: 10px, 10px, 10px, 10px;
+}
+
+body > div > ul {
+    list-style: none;
+}
