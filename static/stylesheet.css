@@ -62,6 +62,6 @@ body > div > ul > li {
     color: ghostwhite;
 }
 
-body > div > #small-print {
-    font-size: 10px;
+#small-print {
+    font-size: 6px;
 }
