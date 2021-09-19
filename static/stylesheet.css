@@ -10,6 +10,7 @@ body {
 }
 
 body > h1 {
+    color: white;
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -44,15 +45,23 @@ body > div {
 }
 
 body > div > p {
-    color: white;
-    padding: 10px, 10px, 10px, 10px;
-}
-
-body > div > a {
     color: whitesmoke;
     padding: 10px, 10px, 10px, 10px;
 }
 
+body > div > p > a {
+    color: ghostwhite
+}
+
 body > div > ul {
     list-style: none;
+}
+
+body > div > ul > li {
+    font-size: 16px;
+    color: ghostwhite;
+}
+
+body > div > #small-print {
+    font-size: 10px;
 }

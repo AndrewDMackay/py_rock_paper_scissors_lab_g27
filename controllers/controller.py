@@ -34,6 +34,9 @@ def play_game(player_choice_1, player_choice_2):
     return render_template("result.html", result = result)
 
     # Alternate, previously returned formatted string in browser.. 
-    
+
     # return (f"Player 1 chose {player_choice_1}!  Player 2 chose {player_choice_2}! {result}")
 
+@app.route('/cpu', methods=['GET'])
+def cpu():
+    return render_template('cpu.html', title='cpu')
