@@ -50,9 +50,9 @@ body > div > p {
 }
 
 body > div > p > a {
+    text-decoration: none;
     font-size: 18px;
     color: ghostwhite
-    
 }
 
 body > div > ul {
